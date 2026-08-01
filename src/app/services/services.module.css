@@ -1,0 +1,201 @@
+.main {
+  position: relative;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  overflow: hidden;
+}
+
+/* --- Hero Section --- */
+.hero {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.heroBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  animation: kenBurns 20s ease-out infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes kenBurns {
+  0% { transform: scale(1) translate(0, 0); }
+  100% { transform: scale(1.15) translate(-1%, -1%); }
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(10,15,28,0.9) 0%, rgba(10,15,28,0.6) 50%, rgba(5,5,10,0.8) 100%);
+  z-index: 1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 2rem;
+}
+
+.heroTitle {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  text-shadow: 0 10px 30px rgba(0,0,0,0.8);
+  opacity: 0;
+  animation: fadeUp 1s ease forwards 0.2s;
+}
+
+.heroSubtitle {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  text-shadow: 0 4px 15px rgba(0,0,0,0.8);
+  opacity: 0;
+  animation: fadeUp 1s ease forwards 0.4s;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Services Section --- */
+.servicesSection {
+  padding: 6rem 2rem;
+  position: relative;
+  z-index: 2;
+  background: var(--bg-primary);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 3rem;
+}
+
+.serviceCard {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+  background: linear-gradient(180deg, rgba(20,25,40,0.8) 0%, rgba(10,15,28,0.95) 100%);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  opacity: 0; /* for animation */
+}
+
+.serviceCard:hover {
+  transform: translateY(-10px);
+  border-color: rgba(212,175,55,0.3);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+}
+
+.cardImageContainer {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.cardImage {
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.serviceCard:hover .cardImage {
+  transform: scale(1.05);
+}
+
+.cardImageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(0deg, rgba(10,15,28,1) 0%, rgba(10,15,28,0.2) 100%);
+}
+
+.cardContent {
+  padding: 2.5rem;
+  position: relative;
+}
+
+.serviceIcon {
+  font-size: 2.5rem;
+  color: var(--accent-gold);
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  background: rgba(212, 175, 55, 0.1);
+  padding: 1rem;
+  border-radius: 50%;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.serviceTitle {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.serviceDesc {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.serviceCTA {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent-gold);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.serviceCard:hover .serviceCTA {
+  gap: 1rem;
+}
+
+/* Staggered Animations */
+.delay0 { animation: fadeUp 1s ease forwards 0.1s; }
+.delay1 { animation: fadeUp 1s ease forwards 0.2s; }
+.delay2 { animation: fadeUp 1s ease forwards 0.3s; }
+.delay3 { animation: fadeUp 1s ease forwards 0.4s; }
+.delay4 { animation: fadeUp 1s ease forwards 0.5s; }
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  .servicesGrid {
+    grid-template-columns: 1fr;
+  }
+}

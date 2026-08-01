@@ -1,0 +1,239 @@
+.main {
+  position: relative;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  overflow: hidden;
+}
+
+/* --- Hero Section --- */
+.hero {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.heroBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  animation: kenBurns 20s ease-out infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes kenBurns {
+  0% { transform: scale(1) translate(0, 0); }
+  100% { transform: scale(1.15) translate(-1%, -1%); }
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(10,15,28,0.9) 0%, rgba(10,15,28,0.6) 50%, rgba(5,5,10,0.8) 100%);
+  z-index: 1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 2rem;
+}
+
+.heroTitle {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  text-shadow: 0 10px 30px rgba(0,0,0,0.8);
+  opacity: 0;
+  animation: fadeUp 1s ease forwards 0.2s;
+}
+
+.heroSubtitle {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  text-shadow: 0 4px 15px rgba(0,0,0,0.8);
+  line-height: 1.8;
+  opacity: 0;
+  animation: fadeUp 1s ease forwards 0.4s;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Showroom Section --- */
+.showroomSection {
+  padding: 6rem 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.showroomRow {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 6rem;
+  background: linear-gradient(180deg, rgba(20,25,40,0.8) 0%, rgba(10,15,28,0.95) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+  opacity: 0;
+}
+
+.showroomRow:last-child {
+  margin-bottom: 0;
+}
+
+.showroomRow:hover {
+  transform: translateY(-5px);
+  border-color: rgba(212,175,55,0.3);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+}
+
+.showroomRowReverse {
+  flex-direction: row-reverse;
+}
+
+.imageColumn {
+  flex: 1.2;
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  height: 400px;
+}
+
+.carImage {
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.showroomRow:hover .carImage {
+  transform: scale(1.03);
+}
+
+.textColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carTitle {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.carTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: var(--accent-gold);
+}
+
+.showroomRowReverse .carTitle::after {
+  left: auto;
+  right: 0;
+}
+.showroomRowReverse .textColumn {
+  text-align: right;
+  align-items: flex-end;
+}
+
+.carDesc {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.carSpecs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.specItem {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+}
+
+.showroomRowReverse .specItem {
+  flex-direction: row-reverse;
+}
+
+.specIcon {
+  color: var(--accent-gold);
+  font-size: 1.5rem;
+}
+
+.ctaContainer {
+  margin-top: 1rem;
+}
+
+/* Staggered Animations */
+.delay0 { animation: fadeUp 1s ease forwards 0.1s; }
+.delay1 { animation: fadeUp 1s ease forwards 0.3s; }
+.delay2 { animation: fadeUp 1s ease forwards 0.5s; }
+.delay3 { animation: fadeUp 1s ease forwards 0.7s; }
+
+@media (max-width: 1024px) {
+  .showroomRow, .showroomRowReverse {
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 2rem;
+  }
+  
+  .imageColumn {
+    width: 100%;
+    height: 300px;
+  }
+  
+  .textColumn {
+    text-align: left;
+    align-items: flex-start;
+  }
+  
+  .showroomRowReverse .carTitle::after {
+    left: 0;
+    right: auto;
+  }
+  
+  .showroomRowReverse .specItem {
+    flex-direction: row;
+  }
+}
