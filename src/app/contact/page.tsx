@@ -21,7 +21,7 @@ export default function ContactPage() {
       <section className={styles.hero}>
         <Image 
           src="/images/oxford-heritage-bg.jpg" 
-          alt="Oxford VIP Chauffeurs Concierge" 
+          alt="5 Star Oxford Concierge" 
           fill 
           priority
           className={styles.heroBackground} 
@@ -52,7 +52,7 @@ export default function ContactPage() {
                 <div className={styles.infoContent}>
                   <h3>Headquarters</h3>
                   <p>
-                    Oxford VIP Chauffeurs<br />
+                    5 Star Oxford<br />
                     54 Westbury Crescent<br />
                     Oxford, OX4 3SA
                   </p>
@@ -64,7 +64,7 @@ export default function ContactPage() {
                 <div className={styles.infoContent}>
                   <h3>Email Enquiries</h3>
                   <p>
-                    <a href="mailto:info@oxfordvipchauffeurs.com">info@oxfordvipchauffeurs.com</a>
+                    <a href="mailto:info@5staroxford.com">info@5staroxford.com</a>
                   </p>
                 </div>
               </div>

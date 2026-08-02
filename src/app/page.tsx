@@ -133,7 +133,7 @@ export default function Home() {
                   <span>TEL:</span> +44 (0) 1865 000 000
                 </div>
                 <div className={styles.contactItem}>
-                  <span>EMAIL:</span> bookings@oxfordvipchauffeurs.com
+                  <span>EMAIL:</span> bookings@5staroxford.com
                 </div>
               </div>
             </div>

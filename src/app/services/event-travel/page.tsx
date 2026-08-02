@@ -2,7 +2,7 @@ import styles from '@/app/page.module.css';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Event Travel | Oxford VIP Chauffeurs',
+  title: 'Event Travel | 5 Star Oxford',
 };
 
 export default function Page() {
@@ -12,7 +12,7 @@ export default function Page() {
         <div className="container">
           <div className="glass-panel" style={{ padding: '3rem', maxWidth: '900px', margin: '0 auto' }}>
             <h1 className={styles.sectionTitle} style={{ marginBottom: '2rem' }}>Event Travel</h1>
-            <p style={{ marginBottom: "1.5rem", color: "var(--text-secondary)", lineHeight: 1.8 }}>Event Travel & Chaffeur Transport Oxfordshire from Oxford VIP Chauffeurs</p>
+            <p style={{ marginBottom: "1.5rem", color: "var(--text-secondary)", lineHeight: 1.8 }}>Event Travel & Chaffeur Transport Oxfordshire from 5 Star Oxford</p>
             <p style={{ marginBottom: "1.5rem", color: "var(--text-secondary)", lineHeight: 1.8 }}>Event Travel to the Nations Top Events</p>
             <p style={{ marginBottom: "1.5rem", color: "var(--text-secondary)", lineHeight: 1.8 }}>Travelling to the next major sporting event can now be easier, more relaxing and luxurious than ever before with our dedicated range of event travel services. Designed to provide a VIP service for clients throughout Oxfordshire and beyond, we will take all the stress out of travelling to your favourite event, wherever it may be.</p>
             <p style={{ marginBottom: "1.5rem", color: "var(--text-secondary)", lineHeight: 1.8 }}>Whether you’re heading down to Wimbledon for a day packed full of tennis or are having a day at the races with a few friends, we can provide tailored event travel packages to make sure that you arrive on-time, completely relaxed and ready for the days events that lay ahead.</p>

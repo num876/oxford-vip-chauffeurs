@@ -2,7 +2,7 @@ import styles from './terms.module.css';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'Terms & Conditions | Oxford VIP Chauffeurs',
+  title: 'Terms & Conditions | 5 Star Oxford',
 };
 
 export default function TermsPage() {
@@ -12,7 +12,7 @@ export default function TermsPage() {
       <section className={styles.hero}>
         <Image 
           src="/images/oxford-heritage-bg.jpg" 
-          alt="Oxford VIP Chauffeurs" 
+          alt="5 Star Oxford" 
           fill 
           priority
           className={styles.heroBackground} 
@@ -57,14 +57,14 @@ export default function TermsPage() {
                   When carrying luggage, all hard cases or boxes must be placed in the boot. Only a reasonable amount of hand luggage may, with the chauffeurs approval, be carried inside the car.
                 </p>
                 <p className={styles.legalText}>
-                  Oxford VIP Chauffeurs do not accept any responsibility for personal goods left in the vehicle.
+                  5 Star Oxford do not accept any responsibility for personal goods left in the vehicle.
                 </p>
               </section>
 
               <section className={styles.legalSection}>
                 <h3>3. Route & Chauffeur Discretion</h3>
                 <p className={styles.legalText}>
-                  The chauffeur will choose what is in his opinion the best route to a particular destination according to traffic conditions and will always drive at a reasonable speed accordingly. If traffic conditions including road closures, accidents, unforeseen heavy traffic etc prevents the chauffeur from arriving on time, and this results in missed appointments or forwarding travel plans etc, Oxford VIP Chauffeurs cannot be held responsible for any loss incurred, although every effort will be made to ensure the car arrives on time.
+                  The chauffeur will choose what is in his opinion the best route to a particular destination according to traffic conditions and will always drive at a reasonable speed accordingly. If traffic conditions including road closures, accidents, unforeseen heavy traffic etc prevents the chauffeur from arriving on time, and this results in missed appointments or forwarding travel plans etc, 5 Star Oxford cannot be held responsible for any loss incurred, although every effort will be made to ensure the car arrives on time.
                 </p>
               </section>
 

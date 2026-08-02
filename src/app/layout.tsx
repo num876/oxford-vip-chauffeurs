@@ -9,14 +9,14 @@ const outfit = Outfit({ subsets: ['latin'], variable: '--font-outfit' });
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.oxfordvipchauffeurs.com'),
-  title: 'Oxford VIP Chauffeurs | Luxury Airport Transfers & Bespoke Travel',
-  description: 'Book a Bespoke Chauffeur Service or Airport Transfer from Oxford with Chauffeur Travel experts Oxford VIP Chauffeurs. Experience luxury with our Range Rover Vogue fleet.',
+  metadataBase: new URL('https://www.5staroxford.com'),
+  title: '5 Star Oxford | Luxury Airport Transfers & Bespoke Travel',
+  description: 'Book a Bespoke Chauffeur Service or Airport Transfer from Oxford with Chauffeur Travel experts 5 Star Oxford. Experience luxury with our Range Rover Vogue fleet.',
   openGraph: {
-    title: 'Oxford VIP Chauffeurs',
+    title: '5 Star Oxford',
     description: 'Bespoke Chauffeur Service and Luxury Airport Transfers from Oxford.',
-    url: 'https://www.oxfordvipchauffeurs.com/',
-    siteName: 'Oxford VIP Chauffeurs',
+    url: 'https://www.5staroxford.com/',
+    siteName: '5 Star Oxford',
     images: [
       {
         url: '/images/og-image.jpg',

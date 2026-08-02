@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'Our Services | Oxford VIP Chauffeurs',
+  title: 'Our Services | 5 Star Oxford',
 };
 
 const services = [
@@ -51,7 +51,7 @@ export default function ServicesPage() {
       <section className={styles.hero}>
         <Image 
           src="/images/services-hero.jpg" 
-          alt="Oxford VIP Chauffeur Service" 
+          alt="5 Star Oxford Chauffeur Service" 
           fill 
           priority
           className={styles.heroBackground} 
@@ -60,7 +60,7 @@ export default function ServicesPage() {
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>Our Luxury Services</h1>
           <p className={styles.heroSubtitle}>
-            Oxford VIP Chauffeurs provides an extensive range of bespoke transportation solutions. Explore our offerings below.
+            5 Star Oxford provides an extensive range of bespoke transportation solutions. Explore our offerings below.
           </p>
         </div>
       </section>

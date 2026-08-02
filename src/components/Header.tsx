@@ -49,14 +49,14 @@ export default function Header() {
               fontWeight: 400,
               fontStyle: 'italic',
               marginRight: '0.2rem'
-            }}>OV</span>
+            }}>5S</span>
             <span style={{ 
               display: 'flex', 
               flexDirection: 'column', 
               justifyContent: 'center',
               lineHeight: 1.1
             }}>
-              <span style={{ fontSize: '1.3rem' }}>Oxford VIP</span>
+              <span style={{ fontSize: '1.3rem' }}>5 Star Oxford</span>
               <span style={{ fontSize: '0.65rem', letterSpacing: '6px', fontWeight: 400 }}>CHAUFFEURS</span>
             </span>
           </span>

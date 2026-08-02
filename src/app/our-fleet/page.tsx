@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Our Fleet | Oxford VIP Chauffeurs',
+  title: 'Our Fleet | 5 Star Oxford',
 };
 
 const vehicles = [
@@ -64,7 +64,7 @@ export default function FleetPage() {
       <section className={styles.hero}>
         <Image 
           src="/images/oxford-heritage-bg.jpg" 
-          alt="The Oxford VIP Fleet" 
+          alt="The 5 Star Oxford Fleet" 
           fill 
           priority
           className={styles.heroBackground} 
