@@ -9,15 +9,27 @@ export const metadata = {
 
 const vehicles = [
   {
-    id: 'range-rover',
-    name: 'Range Rover Vogue',
-    desc: 'The pinnacle of luxury SUV travel. Commanding presence, unparalleled comfort, and exceptional capability for tours and long-distance journeys.',
-    image: '/images/range-rover2.jpg',
+    id: 'rolls-royce-ghost',
+    name: 'Rolls Royce Ghost',
+    desc: 'The pinnacle of luxury. Crafted to offer maximum comfort and an exquisitely refined, connected journey.',
+    image: '/images/rolls-royce-ghost.jpg',
     specs: [
       { icon: '👥', text: '4 Pax' },
-      { icon: '🧳', text: '3 Bags' },
+      { icon: '💼', text: '3 Bags' },
       { icon: '📶', text: 'Free Wi-Fi' },
-      { icon: '⭐', text: 'Luxury SUV' },
+      { icon: '✨', text: 'Ultra-Luxury' },
+    ]
+  },
+  {
+    id: 'bmw-7-series',
+    name: 'BMW 7 Series',
+    desc: 'Our prestigious BMW 7 Series is the perfect vehicle for those seeking a modern executive presence and dynamic comfort.',
+    image: '/images/bmw-7-series.jpg',
+    specs: [
+      { icon: '👥', text: '4 Pax' },
+      { icon: '💼', text: '3 Bags' },
+      { icon: '📶', text: 'Free Wi-Fi' },
+      { icon: '✨', text: 'Executive Sedan' },
     ]
   },
   {
@@ -27,9 +39,21 @@ const vehicles = [
     image: '/images/s-class2.jpg',
     specs: [
       { icon: '👥', text: '3 Pax' },
-      { icon: '🧳', text: '2 Bags' },
+      { icon: '💼', text: '2 Bags' },
       { icon: '📶', text: 'Free Wi-Fi' },
-      { icon: '⭐', text: 'Executive Class' },
+      { icon: '✨', text: 'Executive Class' },
+    ]
+  },
+  {
+    id: 'e-class',
+    name: 'Mercedes-Benz E-Class',
+    desc: 'Engineered to deliver a deeply connected and supremely comfortable journey. Ideal for sophisticated city transfers.',
+    image: '/images/mercedes-e-class.jpg',
+    specs: [
+      { icon: '👥', text: '4 Pax' },
+      { icon: '💼', text: '2 Bags' },
+      { icon: '📶', text: 'Free Wi-Fi' },
+      { icon: '✨', text: 'Business Class' },
     ]
   },
   {
@@ -39,21 +63,9 @@ const vehicles = [
     image: '/images/v-class2.jpg',
     specs: [
       { icon: '👥', text: '7 Pax' },
-      { icon: '🧳', text: '7 Bags' },
+      { icon: '💼', text: '7 Bags' },
       { icon: '📶', text: 'Free Wi-Fi' },
-      { icon: '⭐', text: 'Luxury MPV' },
-    ]
-  },
-  {
-    id: 'range-rover-sport',
-    name: 'Range Rover Sport',
-    desc: 'Dynamic performance fused with dramatic styling. A thrilling yet exceptionally luxurious ride for bespoke tours and elite transfers.',
-    image: '/images/service-tours-oxford.jpg',
-    specs: [
-      { icon: '👥', text: '4 Pax' },
-      { icon: '🧳', text: '3 Bags' },
-      { icon: '📶', text: 'Free Wi-Fi' },
-      { icon: '⭐', text: 'Dynamic SUV' },
+      { icon: '✨', text: 'Luxury MPV' },
     ]
   }
 ];

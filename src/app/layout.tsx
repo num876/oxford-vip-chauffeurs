@@ -3,6 +3,7 @@ import { Inter, Outfit, Playfair_Display } from 'next/font/google';
 import './globals.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import ScrollObserver from '../components/ScrollObserver';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const outfit = Outfit({ subsets: ['latin'], variable: '--font-outfit' });
@@ -37,6 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en-GB">
       <body className={`${inter.variable} ${outfit.variable} ${playfair.variable}`}>
+        <ScrollObserver />
         <Header />
         {children}
         <Footer />
