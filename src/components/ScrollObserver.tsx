@@ -33,7 +33,7 @@ export default function ScrollObserver() {
         '[class*="showroomRow"]',
         '.contactInfo',
         '.glass-panel',
-        '.service-card',
+        '[class*="serviceCard"]',
         '[data-scroll-animate]'
       ].join(', ');
 

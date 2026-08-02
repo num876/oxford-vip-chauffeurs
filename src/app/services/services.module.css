@@ -104,13 +104,15 @@
   transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
   background: linear-gradient(180deg, rgba(20,25,40,0.8) 0%, rgba(10,15,28,0.95) 100%);
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-  opacity: 0; /* for animation */
+  /* opacity handled by scroll observer */
 }
 
-.serviceCard:hover {
+@media (hover: hover) and (pointer: fine) {
+  .serviceCard:hover {
   transform: translateY(-10px);
   border-color: rgba(212,175,55,0.3);
   box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+}
 }
 
 .cardImageContainer {
@@ -125,8 +127,10 @@
   transition: transform 0.8s ease;
 }
 
-.serviceCard:hover .cardImage {
+@media (hover: hover) and (pointer: fine) {
+  .serviceCard:hover .cardImage {
   transform: scale(1.05);
+}
 }
 
 .cardImageOverlay {
@@ -180,16 +184,18 @@
   transition: all 0.3s ease;
 }
 
-.serviceCard:hover .serviceCTA {
+@media (hover: hover) and (pointer: fine) {
+  .serviceCard:hover .serviceCTA {
   gap: 1rem;
+}
 }
 
 /* Staggered Animations */
-.delay0 { animation: fadeUp 1s ease forwards 0.1s; }
-.delay1 { animation: fadeUp 1s ease forwards 0.2s; }
-.delay2 { animation: fadeUp 1s ease forwards 0.3s; }
-.delay3 { animation: fadeUp 1s ease forwards 0.4s; }
-.delay4 { animation: fadeUp 1s ease forwards 0.5s; }
+
+
+
+
+
 
 @media (max-width: 768px) {
   .heroTitle {
@@ -227,7 +233,7 @@
     padding: 3rem 1rem !important;
   }
   
-  .glass-panel, .serviceCard, .infoCard {
+  .glass-panel, .infoCard {
     padding: 1.5rem !important;
   }
 
@@ -240,5 +246,33 @@
   /* Shrink images slightly */
   .imageWrapper, .serviceImage {
     height: 200px !important;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .cardContent {
+    padding: 1.5rem !important; /* Proper padding for text area only */
+  }
+  
+  .serviceTitle {
+    font-size: clamp(1.5rem, 5vw, 2rem) !important;
+  }
+  
+  .cardImageContainer {
+    display: block !important;
+    position: relative !important;
+    width: 100% !important;
+    min-height: 220px !important;
+    height: 220px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    overflow: hidden !important;
+  }
+  
+  .cardImage {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
   }
 }

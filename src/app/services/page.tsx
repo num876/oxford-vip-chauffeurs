@@ -73,7 +73,7 @@ export default function ServicesPage() {
               <Link 
                 key={service.path} 
                 href={service.path} 
-                className={`${styles.serviceCard} ${styles[`delay${index}`]}`}
+                className={`${styles.serviceCard} `}
               >
                 <div className={styles.cardImageContainer}>
                   <Image 
