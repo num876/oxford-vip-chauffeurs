@@ -723,3 +723,27 @@
     padding: 10px; /* 44px tap target approx */
   }
 }
+
+
+/* Fix Mobile Navbar Toggle visibility */
+.mobileMenuToggle {
+  z-index: 1001; /* Ensure hamburger is above the overlay */
+  position: relative;
+}
+
+/* Base state for mobile overlay is hidden via opacity/pointer-events */
+@media (max-width: 768px) {
+  .mobileNavOverlay {
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  
+  .mobileNavOverlayOpen {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+}

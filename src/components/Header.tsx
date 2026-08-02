@@ -78,20 +78,18 @@ export default function Header() {
       </div>
 
       {/* Mobile Navigation Overlay */}
-      {isMobileMenuOpen && (
-        <div className={styles.mobileNavOverlay}>
-          <nav className={styles.mobileNavLinks}>
-            <Link href="/" className={linkStyle('/')} onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
-            <Link href="/services" className={linkStyle('/services')} onClick={() => setIsMobileMenuOpen(false)}>Services</Link>
-            <Link href="/our-fleet" className={linkStyle('/our-fleet')} onClick={() => setIsMobileMenuOpen(false)}>Our Fleet</Link>
-            <Link href="/about-us" className={linkStyle('/about-us')} onClick={() => setIsMobileMenuOpen(false)}>About</Link>
-            <Link href="/contact" className={linkStyle('/contact')} onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
-            <Link href="/booking" className="btn btn-primary" onClick={() => setIsMobileMenuOpen(false)}>
-              Book Online
-            </Link>
-          </nav>
-        </div>
-      )}
+      <div className={`${styles.mobileNavOverlay} ${isMobileMenuOpen ? styles.mobileNavOverlayOpen : ''}`}>
+        <nav className={styles.mobileNavLinks}>
+          <Link href="/" className={linkStyle('/')} onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
+          <Link href="/services" className={linkStyle('/services')} onClick={() => setIsMobileMenuOpen(false)}>Services</Link>
+          <Link href="/our-fleet" className={linkStyle('/our-fleet')} onClick={() => setIsMobileMenuOpen(false)}>Our Fleet</Link>
+          <Link href="/about-us" className={linkStyle('/about-us')} onClick={() => setIsMobileMenuOpen(false)}>About</Link>
+          <Link href="/contact" className={linkStyle('/contact')} onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
+          <Link href="/booking" className="btn btn-primary" onClick={() => setIsMobileMenuOpen(false)}>
+            Book Online
+          </Link>
+        </nav>
+      </div>
     </header>
   );
 }
