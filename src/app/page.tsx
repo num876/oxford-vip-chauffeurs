@@ -68,18 +68,18 @@ export default function Home() {
             {/* Featured Flagship Vehicle */}
             <div className={`${styles.fleetCard} ${styles.fleetCardFeatured}`}>
               <div className={styles.carImageContainer}>
-                <Image src="/images/range-rover2.jpg" alt="Range Rover Vogue" fill className={styles.carImage} sizes="(max-width: 768px) 100vw, 50vw" />
+                <Image src="/images/rolls-royce-ghost.jpg" alt="Rolls Royce Ghost" fill className={styles.carImage} sizes="(max-width: 768px) 100vw, 50vw" />
               </div>
               <div className={styles.carInfo}>
-                <h3 className={styles.carName}>Range Rover Vogue</h3>
-                <p className={styles.carDesc}>The ultimate in commanding luxury and supreme comfort. Perfect for executive travel and country retreats.</p>
+                <h3 className={styles.carName}>Rolls Royce Ghost</h3>
+                <p className={styles.carDesc}>The pinnacle of luxury. Experience maximum comfort and an exquisitely refined, connected journey.</p>
                 <div className={styles.carSpecs}>
-                  <div className={styles.specItem}><span className={styles.specIcon}>👤</span> 4 Pax</div>
-                  <div className={styles.specItem}><span className={styles.specIcon}>🧳</span> 3 Bags</div>
+                  <div className={styles.specItem}><span className={styles.specIcon}>👥</span> 4 Pax</div>
+                  <div className={styles.specItem}><span className={styles.specIcon}>💼</span> 3 Bags</div>
                   <div className={styles.specItem}><span className={styles.specIcon}>📶</span> Wi-Fi</div>
                 </div>
                 <div className={styles.fleetCTA}>
-                  <Link href="/booking?vehicle=range-rover" className="btn btn-primary">Book This Vehicle</Link>
+                  <Link href="/booking?vehicle=rolls-royce-ghost" className="btn btn-primary">Book This Vehicle</Link>
                 </div>
               </div>
             </div>
