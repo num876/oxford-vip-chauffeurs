@@ -199,3 +199,46 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+/* ---- GIANT MOBILE OVERRIDES ---- */
+@media (max-width: 768px) {
+  /* Force all background attachments to scroll normally to prevent jank */
+  .hero {
+    background-attachment: scroll !important;
+    min-height: 50vh !important;
+    padding: 6rem 1rem 3rem 1rem !important;
+  }
+  
+  .heroTitle {
+    font-size: clamp(2rem, 8vw, 3rem) !important;
+  }
+
+  /* Force all grids/flex to 1 column */
+  .servicesGrid, .grid, .contactGrid, .infoGrid, .formGrid, .aboutGrid {
+    grid-template-columns: 1fr !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+  }
+  
+  /* Reduce container/section paddings */
+  .section, .container {
+    padding: 3rem 1rem !important;
+  }
+  
+  .glass-panel, .serviceCard, .infoCard {
+    padding: 1.5rem !important;
+  }
+
+  /* Ensure inputs and buttons span full width */
+  input, textarea, select, button, .btn {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  /* Shrink images slightly */
+  .imageWrapper, .serviceImage {
+    height: 200px !important;
+  }
+}
