@@ -210,6 +210,10 @@
 .delay1 { animation: fadeUp 1s ease forwards 0.3s; }
 .delay2 { animation: fadeUp 1s ease forwards 0.5s; }
 .delay3 { animation: fadeUp 1s ease forwards 0.7s; }
+.delay4 { animation: fadeUp 1s ease forwards 0.9s; }
+.delay5 { animation: fadeUp 1s ease forwards 1.1s; }
+.delay6 { animation: fadeUp 1s ease forwards 1.3s; }
+.delay7 { animation: fadeUp 1s ease forwards 1.5s; }
 
 @media (max-width: 1024px) {
   .showroomRow, .showroomRowReverse {
