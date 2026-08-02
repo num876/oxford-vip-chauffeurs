@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './page.module.css';
+import StarRating from '../components/StarRating';
 
 export default function Home() {
   return (
@@ -14,10 +15,12 @@ export default function Home() {
         
         {/* Floating Badges */}
         <div className={`${styles.floatingBadge} ${styles.badgeTopLeft}`}>
-          <span className={styles.badgeIcon}>★</span>
-          <div className={styles.badgeText}>
-            <span className={styles.badgeTitle}>Top Rated</span>
-            <span className={styles.badgeSub}>5-Star Chauffeurs</span>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
+            <StarRating />
+            <div className={styles.badgeText} style={{ marginTop: '0.2rem' }}>
+              <span className={styles.badgeTitle}>Rated 5 Stars</span>
+              <span className={styles.badgeSub}>By Our Clients</span>
+            </div>
           </div>
         </div>
         

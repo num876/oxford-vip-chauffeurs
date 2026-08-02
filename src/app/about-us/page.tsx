@@ -1,4 +1,5 @@
 import styles from './about.module.css';
+import StarRating from '../../components/StarRating';
 import Image from 'next/image';
 
 export const metadata = {

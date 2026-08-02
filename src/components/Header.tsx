@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import styles from '../app/page.module.css';
@@ -43,22 +44,14 @@ export default function Header() {
             alignItems: 'center',
             gap: '0.5rem'
           }}>
-            <span style={{ 
-              fontSize: '2.5rem', 
-              lineHeight: 1, 
-              fontWeight: 400,
-              fontStyle: 'italic',
-              marginRight: '0.2rem'
-            }}>5S</span>
-            <span style={{ 
-              display: 'flex', 
-              flexDirection: 'column', 
-              justifyContent: 'center',
-              lineHeight: 1.1
-            }}>
-              <span style={{ fontSize: '1.3rem' }}>5 Star Oxford</span>
-              <span style={{ fontSize: '0.65rem', letterSpacing: '6px', fontWeight: 400 }}>CHAUFFEURS</span>
-            </span>
+            <Image 
+              src="/images/logo.svg" 
+              alt="5 Star Oxford Logo" 
+              width={260} 
+              height={65} 
+              style={{ objectFit: 'contain' }}
+              priority
+            />
           </span>
         </Link>
         

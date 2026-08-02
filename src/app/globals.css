@@ -102,13 +102,39 @@ ul {
 .btn-primary {
   background: var(--accent-gold);
   color: var(--bg-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Premium Shimmer Effect for Primary Buttons */
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  animation: shimmer 6s infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  15% { left: 200%; }
+  100% { left: 200%; }
 }
 
 .btn-primary:hover {
   background: var(--accent-gold-hover);
   color: var(--bg-primary);
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
 }
 
 .btn-outline {
@@ -136,6 +162,24 @@ ul {
 .delay-100 { animation-delay: 100ms; }
 .delay-200 { animation-delay: 200ms; }
 .delay-300 { animation-delay: 300ms; }
+
+/* Star Rating Glow Animation */
+.star-rating-container {
+  display: inline-flex;
+}
+.star-rating-container span {
+  animation: starPulse 3s ease-in-out infinite alternate;
+}
+.star-rating-container span:nth-child(1) { animation-delay: 0.0s; }
+.star-rating-container span:nth-child(2) { animation-delay: 0.2s; }
+.star-rating-container span:nth-child(3) { animation-delay: 0.4s; }
+.star-rating-container span:nth-child(4) { animation-delay: 0.6s; }
+.star-rating-container span:nth-child(5) { animation-delay: 0.8s; }
+
+@keyframes starPulse {
+  0% { opacity: 0.7; filter: drop-shadow(0 0 4px rgba(212, 175, 55, 0.3)); }
+  100% { opacity: 1; filter: drop-shadow(0 0 12px rgba(212, 175, 55, 0.8)) brightness(1.2); }
+}
 
 /* Global Layout */
 .section {

@@ -1,4 +1,5 @@
 import styles from './fleet.module.css';
+import StarRating from '../../components/StarRating';
 import Image from 'next/image';
 import Link from 'next/link';
 
