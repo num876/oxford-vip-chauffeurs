@@ -10,6 +10,9 @@ export default function Footer() {
           <StarRating size="1.5rem" />
           <span style={{ color: 'var(--text-secondary)', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '2px' }}>Premium Service</span>
         </div>
+        <p style={{ textAlign: 'center', maxWidth: '600px', color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.6', marginBottom: '1rem' }}>
+          As Oxfordshire's leading provider of Chauffeur Travel Services, we can tailor your journey around your exact requirements to ensure you arrive in style.
+        </p>
         <p>&copy; {new Date().getFullYear()} 5 Star Oxford. All rights reserved.</p>
         <div style={{ display: 'flex', gap: '2rem' }}>
           <Link href="/terms-and-conditions">Terms and Conditions</Link>

@@ -6,13 +6,11 @@ export const metadata = {
   title: 'About Us | 5 Star Oxford',
 };
 
-const objectives = [
-  { icon: '⭐', text: 'To provide our clients with the service they need, when they need it and foster repeat business.' },
-  { icon: '🛡️', text: 'To offer a luxury class service in terms of refinement, assistance, reliability, discretion and above all safety.' },
-  { icon: '🤝', text: 'To strive to provide our clients with tailor-made service at competitive rates which stands out above the competition.' },
-  { icon: '⏱️', text: 'To constantly strive to improve the efficiency, effectiveness and responsiveness of our services.' },
-  { icon: '📈', text: 'To seek continuous improvement year on year with the levels of service offered to all our clients.' },
-  { icon: '🌍', text: 'To market and promote 5 Star Oxford to a wider public nationally, and work in partnership with other agencies.' }
+const chauffeurStandards = [
+  { icon: '👔', title: 'Attire', text: 'To ensure the highest possible standards, all of our Oxford based Chauffeurs dress in a dark suit, tie, white or blue shirt and black shoes. We insist that no other jewellery be worn other than watches, wedding rings and cufflinks.' },
+  { icon: '🤫', title: 'Confidentiality', text: 'A vital part of our agreement with our chauffeurs is the need for total confidentiality and discretion of the client. We insist they may not divulge or discuss any information they have become party to during the journey.' },
+  { icon: '🚗', title: 'Driving Standards', text: 'Our chauffeurs must at all times follow the speed limit and must always adhere to traffic laws at all times. Our clients must always have a smooth ride without discernable acceleration or deceleration as they may be trying to work or sleep.' },
+  { icon: '🗺️', title: 'Route Knowledge', text: 'Before employment all chauffeurs have to go through a test of, arterial routes, all major airports and terminal layout, locations of major hotels, restaurants and other points of interests around Oxford and London.' }
 ];
 
 export default function AboutPage() {
@@ -52,38 +50,39 @@ export default function AboutPage() {
               <h2 className={styles.sectionTitle}>A Legacy of Excellence in Chauffeur Travel</h2>
               
               <p className={styles.storyText}>
-                Here at 5 Star Oxford we provide a luxury chauffeur service that’s tailored for each of our clients and delivered bespoke to your individual needs.
+                5 Star Oxford has cemented its reputation as Oxford’s finest luxury chauffeur company and takes pride in being the market leader in executive transport. Throughout the South East and Oxfordshire in particular, our name is synonymous with quality, comfort, reliability and punctuality.
               </p>
               <p className={styles.storyText}>
-                As a family-run business, 5 Star Oxford has fast become the chauffeur company of choice throughout the Oxfordshire region and beyond. This is due to our commitment to providing our clientele with a very high level of service at competitive rates, generating continued business through customers and referrals.
+                Providing the most prestigious luxury vehicles and professionally trained chauffeurs, we are the company of choice for the most discerning of clients. At Five Star we have a simple company ethos and philosophy, to provide a luxury transport service that’s unparalleled in terms of performance but at a very competitive price.
               </p>
               <p className={styles.storyText}>
-                All our chauffeurs are licensed, DBS checked through Oxford City Council and have a wealth of expertise, ensuring we provide professionalism at all times when interacting with VIP clients and their associates. This experience has been built upon service and trust over the past 15 years.
+                Customer care and satisfaction are our primary objectives and it is this commitment that has enabled us to have continued growth over the years. Our professional team of chauffeurs have been hired by clients to drive them throughout the UK and indeed major European cities including Paris, Brussels, Madrid and Budapest.
               </p>
               <p className={styles.storyText}>
-                All our luxury vehicles are fitted with modern GPS and Wi-Fi as standard, ensuring the vehicles are at their destination when required in the utmost style and safety to give you peace of mind with every journey.
-              </p>
-              <p className={styles.storyText}>
-                5 Star Oxford operate 24 hours a day, 365 days a year and throughout the UK mainland. So whatever your requirements may be, regardless of day, time or place, get in touch with us and we will accommodate any requests or specific requirements.
+                Our aspiration is not to be the biggest, but certainly to be the best.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Objectives Section */}
+      {/* Objectives Section (Now Chauffeur Standards) */}
       <section className={styles.objectivesSection}>
         <div className={styles.container}>
           <div className={styles.objectivesHeader}>
-            <span className={styles.sectionSubtitle}>Core Values</span>
-            <h2 className={styles.sectionTitle}>Our Chauffeur Objectives</h2>
+            <span className={styles.sectionSubtitle}>Our Chauffeurs</span>
+            <h2 className={styles.sectionTitle}>Professionalism is Paramount</h2>
+            <p className={styles.storyText} style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto', color: 'rgba(255,255,255,0.7)' }}>
+              We have a strict selection and employment policy for our drivers as we believe the chauffeur’s appearance, personality, professionalism and knowledge go hand in hand with an impeccable vehicle. Adhering to correct Etiquette, being friendly but never intrusive and always trying to anticipate your needs is where our chauffeurs excel.
+            </p>
           </div>
           
-          <div className={styles.objectivesGrid}>
-            {objectives.map((objective, index) => (
+          <div className={styles.objectivesGrid} style={{ marginTop: '3rem' }}>
+            {chauffeurStandards.map((standard, index) => (
               <div key={index} className={styles.objectiveCard}>
-                <div className={styles.objectiveIcon}>{objective.icon}</div>
-                <p className={styles.objectiveText}>{objective.text}</p>
+                <div className={styles.objectiveIcon}>{standard.icon}</div>
+                <h3 style={{ color: 'white', marginBottom: '1rem', fontSize: '1.2rem', fontWeight: '500' }}>{standard.title}</h3>
+                <p className={styles.objectiveText} style={{ textAlign: 'left', lineHeight: '1.6' }}>{standard.text}</p>
               </div>
             ))}
           </div>

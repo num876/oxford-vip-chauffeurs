@@ -33,16 +33,15 @@ export default function Home() {
         </div>
 
         <div className={`container ${styles.heroContent}`}>
-          <span className={`${styles.heroSubtitle} ${styles.animate1}`}>Unrivalled Luxury</span>
           <h1 className={`${styles.heroTitle} ${styles.animate2}`}>
-            Arrive in <span>Absolute Elegance</span>
+            EXCELLENCE <span>IN MOTION</span>
           </h1>
           <p className={`${styles.heroDescription} ${styles.animate3}`}>
-            Bespoke chauffeur services and luxury airport transfers from Oxford. Experience the pinnacle of sophisticated travel with our elite fleet and professional chauffeurs.
+            5 Star Oxford has cemented its reputation as Oxford’s finest luxury chauffeur company and takes pride in being the market leader in executive transport. Throughout the South East and Oxfordshire in particular, our name is synonymous with quality, comfort, reliability and punctuality.
           </p>
           <div className={`${styles.heroButtons} ${styles.animate4}`}>
-            <button className="btn btn-primary">Book Now</button>
-            <button className="btn btn-outline">Explore Fleet</button>
+            <Link href="/services" className="btn btn-primary">Our Services</Link>
+            <Link href="/our-fleet" className="btn btn-outline">Explore Fleet</Link>
           </div>
         </div>
 
@@ -133,10 +132,10 @@ export default function Home() {
               
               <div className={styles.contactDetails}>
                 <div className={styles.contactItem}>
-                  <span>TEL:</span> +44 (0) 1865 000 000
+                  <span>TEL:</span> +44 (0) 1865 422 222
                 </div>
                 <div className={styles.contactItem}>
-                  <span>EMAIL:</span> bookings@5staroxford.com
+                  <span>EMAIL:</span> info@5staroxford.com
                 </div>
               </div>
             </div>

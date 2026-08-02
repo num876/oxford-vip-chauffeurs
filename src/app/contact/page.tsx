@@ -74,8 +74,8 @@ export default function ContactPage() {
                 <div className={styles.infoContent}>
                   <h3>Direct Lines</h3>
                   <p>
-                    Office: <a href="tel:+4401865717000">+44 (0)1865 717000</a><br />
-                    Mobile: <a href="tel:+4407748300737">+44 (0)7748 300737</a>
+                    Office: <a href="tel:+4401865422222">+44 (0)1865 422 222</a><br />
+                    Mobile: <a href="tel:+4401865422222">+44 (0)1865 422 222</a>
                   </p>
                 </div>
               </div>

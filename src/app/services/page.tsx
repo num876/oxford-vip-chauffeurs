@@ -10,35 +10,35 @@ const services = [
   { 
     path: '/services/airport-transfers', 
     title: 'Airport Transfers', 
-    desc: 'Seamless, punctual connections to all major UK airports, including Heathrow, Gatwick, and private aviation terminals.', 
+    desc: 'Whether you’re traveling abroad for an important business meeting or looking for a luxurious journey to the airport as part of a special holiday, 5 Star’s exclusive range of Airport Transfers from Oxfordshire will provide the perfect travel.', 
     icon: '✈️',
     image: '/images/service-airport.jpg'
   },
   { 
     path: '/services/business-travel', 
     title: 'Business Travel', 
-    desc: 'Discreet, reliable, and sophisticated transport solutions tailored for corporate executives and roadshows.', 
+    desc: 'As one of Oxfordshire’s leading providers of chauffeur driven business travel, we excel in making sure that you and your colleagues get to important business meetings in the maximum of comfort and relaxation.', 
     icon: '👔',
     image: '/images/service-business.jpg'
   },
   { 
     path: '/services/event-travel', 
     title: 'Event Travel', 
-    desc: 'Make a grand entrance at galas, red carpet events, and weddings with our impeccable fleet.', 
+    desc: 'Finding your way to a special event can often come with unwanted and unnecessary stress. It’s important that you arrive calm, stress free, ready to enjoy your day ahead.', 
     icon: '🥂',
     image: '/images/service-event.jpg'
   },
   { 
     path: '/services/group-travel', 
     title: 'Group Travel', 
-    desc: 'Uncompromising luxury and space for groups. Travel together in absolute comfort with our premium V-Class fleet.', 
+    desc: 'At Five Star we realise that complex itineraries and tight business travel schedules are often liable to last minute changes. Travel together in absolute comfort with our group travel services.', 
     icon: '👥',
     image: '/images/service-group.jpg'
   },
   { 
     path: '/services/tours', 
     title: 'Bespoke Tours', 
-    desc: 'Discover the historic spires of Oxford or the rolling hills of the Cotswolds with your own private chauffeur-guide.', 
+    desc: 'Whether you’re looking to have a quick local tour around Oxfordshire, want to explore a range of different cities, or even want to discover the Cotswolds with your own private chauffeur.', 
     icon: '🏰',
     image: '/images/service-tours-oxford.jpg'
   },
