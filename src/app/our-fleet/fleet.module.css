@@ -145,7 +145,7 @@
 }
 
 .carTitle {
-  font-size: 2.5rem;
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
   font-weight: 300;
   color: var(--text-primary);
   margin-bottom: 1.5rem;
@@ -259,5 +259,33 @@
   .ctaContainer .btn {
     width: 100%; /* Full width button on mobile */
     text-align: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .imageColumn {
+    height: 220px !important; /* Tighter image on mobile */
+    border-bottom: 2px solid var(--accent-gold);
+    border-radius: var(--radius-sm);
+  }
+  
+  .showroomRow {
+    margin-bottom: 2.5rem !important; 
+    padding: 1.5rem 1rem !important; /* Slightly less padding on the sides */
+    gap: 1.5rem !important;
+  }
+
+  .ctaContainer .btn {
+    width: 100%; 
+    text-align: center;
+  }
+
+  .carSpecs {
+    gap: 1rem !important;
+  }
+
+  .carDesc {
+    font-size: 1rem !important;
   }
 }
