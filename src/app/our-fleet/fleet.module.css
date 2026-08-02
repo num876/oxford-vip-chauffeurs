@@ -58,7 +58,7 @@
   color: #ffffff;
   margin-bottom: 1rem;
   text-shadow: 0 10px 30px rgba(0,0,0,0.8);
-  opacity: 0;
+  /* opacity handled by scroll observer */
   animation: fadeUp 1s ease forwards 0.2s;
 }
 
@@ -67,12 +67,12 @@
   color: var(--text-secondary);
   text-shadow: 0 4px 15px rgba(0,0,0,0.8);
   line-height: 1.8;
-  opacity: 0;
+  /* opacity handled by scroll observer */
   animation: fadeUp 1s ease forwards 0.4s;
 }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(30px); }
+  from { /* opacity handled by scroll observer */ transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
@@ -99,7 +99,7 @@
   padding: 2.5rem;
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
   transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
-  opacity: 0;
+  /* opacity handled by scroll observer */
 }
 
 .showroomRow:last-child {
@@ -206,14 +206,14 @@
 }
 
 /* Staggered Animations */
-.delay0 { animation: fadeUp 1s ease forwards 0.1s; }
-.delay1 { animation: fadeUp 1s ease forwards 0.3s; }
-.delay2 { animation: fadeUp 1s ease forwards 0.5s; }
-.delay3 { animation: fadeUp 1s ease forwards 0.7s; }
-.delay4 { animation: fadeUp 1s ease forwards 0.9s; }
-.delay5 { animation: fadeUp 1s ease forwards 1.1s; }
-.delay6 { animation: fadeUp 1s ease forwards 1.3s; }
-.delay7 { animation: fadeUp 1s ease forwards 1.5s; }
+
+
+
+
+
+
+
+
 
 @media (max-width: 1024px) {
   .showroomRow, .showroomRowReverse {

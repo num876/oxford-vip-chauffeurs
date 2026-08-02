@@ -110,7 +110,7 @@ export default function FleetPage() {
           {vehicles.map((vehicle, index) => (
             <div 
               key={vehicle.id} 
-              className={`${styles.showroomRow} ${index % 2 !== 0 ? styles.showroomRowReverse : ''} ${styles[`delay${index}`]}`}
+              className={`${styles.showroomRow} ${index % 2 !== 0 ? styles.showroomRowReverse : ''} `}
             >
               <div className={styles.imageColumn}>
                 <Image 

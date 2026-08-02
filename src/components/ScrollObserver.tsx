@@ -9,7 +9,7 @@ export default function ScrollObserver() {
     const observerOptions = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.15, 
+      threshold: 0.05, 
     };
 
     const observer = new IntersectionObserver((entries, observer) => {
@@ -23,12 +23,17 @@ export default function ScrollObserver() {
 
     const observeElements = () => {
       // Automatically target main structural elements to fade in
-      const selectors = [
-        '.sectionHeader',
+            const selectors = [
+        'h1:not([class*="hero"])', /* Exclude hero H1 so it loads instantly */
+        'h2', 
+        'h3:not([class*="carName"])', /* Car names animate with their parent card */
+        'p:not([class*="hero"]):not([class*="carDesc"])', 
+        '.btn:not([class*="hero"])',
         '.fleetCard',
+        '[class*="showroomRow"]',
         '.contactInfo',
         '.glass-panel',
-        '.service-card', // if it exists
+        '.service-card',
         '[data-scroll-animate]'
       ].join(', ');
 
