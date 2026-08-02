@@ -1,6 +1,8 @@
 
 .main {
-  min-height: 100vh;
+  min-height: 100dvh;
+    /* Fallback for older browsers */
+    min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -53,7 +55,9 @@
 .hero {
   position: relative;
   z-index: 1;
-  min-height: 100vh;
+  min-height: 100dvh;
+    /* Fallback for older browsers */
+    min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -659,7 +663,7 @@
 @media (max-width: 768px) {
   /* Fix Hero padding and layout on mobile */
   .hero {
-    min-height: 85vh; /* slightly shorter on mobile */
+    min-height: 85dvh; /* slightly shorter on mobile */
     padding: 6rem 1rem 3rem 1rem; /* Adjust padding */
     background-position: center center !important; /* Ensure image is centered */
   }
@@ -745,5 +749,16 @@
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .heroOverlay {
+    background: linear-gradient(
+      180deg,
+      rgba(5, 5, 10, 0.9) 0%,
+      rgba(5, 5, 10, 0.7) 50%,
+      rgba(10, 15, 28, 0.95) 100%
+    ); /* Darker on mobile for better text contrast against the video */
   }
 }
