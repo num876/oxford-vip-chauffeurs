@@ -198,3 +198,58 @@ ul {
   opacity: 1;
   transform: translateY(0);
 }
+
+
+/* Mobile Optimization & Typography Scaling */
+h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
+h2 { font-size: clamp(2rem, 4vw, 3rem); }
+h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
+
+/* Prevent iOS Zoom on inputs */
+input, textarea, select {
+  font-size: 16px !important;
+}
+
+/* Ensure buttons have minimum 44px touch target */
+.btn {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  /* Make buttons full width on mobile for easier tapping */
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Sticky Mobile CTA */
+.mobileStickyCTA {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobileStickyCTA {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(10, 15, 28, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 15px 20px;
+    z-index: 9999;
+    border-top: 1px solid var(--border-glass);
+    justify-content: center;
+    box-shadow: 0 -10px 30px rgba(0,0,0,0.5);
+  }
+  
+  /* Add padding to body so sticky CTA doesn't cover content */
+  body {
+    padding-bottom: 80px; 
+  }
+}

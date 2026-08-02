@@ -653,3 +653,73 @@
     text-align: center;
   }
 }
+
+
+/* Giant Mobile Optimization Overrides */
+@media (max-width: 768px) {
+  /* Fix Hero padding and layout on mobile */
+  .hero {
+    min-height: 85vh; /* slightly shorter on mobile */
+    padding: 6rem 1rem 3rem 1rem; /* Adjust padding */
+    background-position: center center !important; /* Ensure image is centered */
+  }
+
+  .heroTitle {
+    font-size: clamp(2.5rem, 8vw, 3.5rem);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.1rem;
+    padding: 0 10px;
+  }
+
+  .heroCTA {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .heroCTA .btn {
+    width: 100%; /* Full width buttons on mobile */
+  }
+
+  /* Reduce massive section paddings */
+  .section {
+    padding: 4rem 1rem;
+  }
+
+  /* Force all grids into 1 column */
+  .fleetGrid, .contactGrid, .serviceGrid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem;
+  }
+
+  /* Fleet card touch area padding */
+  .fleetCard {
+    margin-bottom: 1.5rem;
+  }
+  
+  .carInfo {
+    padding: 1.5rem;
+  }
+
+  /* Header adjustments for frosted glass mobile menu overlay */
+  .mobileNavOverlay {
+    background: rgba(5, 5, 10, 0.95);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+
+  /* Optional: Ensure header logo and hamburger stay visible and large enough */
+  .hamburger, .hamburger::before, .hamburger::after {
+    width: 28px;
+    height: 3px;
+  }
+  
+  .mobileMenuToggle {
+    padding: 10px; /* 44px tap target approx */
+  }
+}

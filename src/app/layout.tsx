@@ -4,6 +4,7 @@ import './globals.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ScrollObserver from '../components/ScrollObserver';
+import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const outfit = Outfit({ subsets: ['latin'], variable: '--font-outfit' });
@@ -42,6 +43,9 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <div className="mobileStickyCTA">
+          <Link href="/booking" className="btn btn-primary" style={{ width: '100%' }}>Book Your Chauffeur</Link>
+        </div>
       </body>
     </html>
   );

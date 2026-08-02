@@ -241,3 +241,19 @@
     flex-direction: row;
   }
 }
+
+
+@media (max-width: 768px) {
+  .imageColumn {
+    height: 250px; /* Shorter image on mobile to save vertical space */
+  }
+  
+  .showroomRow {
+    margin-bottom: 3rem; /* Less space between rows on mobile */
+  }
+
+  .ctaContainer .btn {
+    width: 100%; /* Full width button on mobile */
+    text-align: center;
+  }
+}
