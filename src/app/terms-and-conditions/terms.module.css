@@ -183,7 +183,7 @@
   }
 
   /* Ensure inputs and buttons span full width */
-  input, textarea, select, button, .btn {
+  :global(input), :global(textarea), :global(select), :global(button), .btn {
     width: 100% !important;
     max-width: 100% !important;
   }
