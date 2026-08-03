@@ -249,84 +249,137 @@
 }
 
 
+/* ---- MOBILE FLEET OVERRIDES ---- */
 @media (max-width: 768px) {
+  /* Hero compact */
+  .hero {
+    min-height: 40vh !important;
+    height: 40vh !important;
+    padding: 5rem 1rem 2rem 1rem !important;
+  }
+
+  .heroTitle {
+    font-size: clamp(1.8rem, 7vw, 2.5rem) !important;
+  }
+
+  .heroSubtitle {
+    font-size: 0.9rem !important;
+  }
+
+  /* Showroom section tighter */
+  .showroomSection {
+    padding: 2rem 1rem !important;
+  }
+
+  /* Compact horizontal card layout */
+  .showroomRow,
+  .showroomRowReverse {
+    flex-direction: row !important;
+    padding: 0 !important;
+    gap: 0 !important;
+    margin-bottom: 1.25rem !important;
+    border-radius: var(--radius-md) !important;
+    overflow: hidden !important;
+    min-height: unset !important;
+  }
+
+  /* Image as a left-side strip */
   .imageColumn {
-    height: 250px; /* Shorter image on mobile to save vertical space */
-  }
-  
-  .showroomRow {
-    margin-bottom: 3rem; /* Less space between rows on mobile */
-  }
-
-  .ctaContainer .btn {
-    width: 100%; /* Full width button on mobile */
-    text-align: center;
-  }
-}
-
-
-@media (max-width: 768px) {
-  .imageColumn {
-    height: 220px !important; /* Tighter image on mobile */
-    border-bottom: 2px solid var(--accent-gold);
-    border-radius: var(--radius-sm);
-  }
-  
-  .showroomRow {
-    margin-bottom: 2.5rem !important; 
-    padding: 1.5rem 1rem !important; /* Slightly less padding on the sides */
-    gap: 1.5rem !important;
+    display: block !important;
+    position: relative !important;
+    width: 110px !important;
+    min-width: 110px !important;
+    max-width: 110px !important;
+    height: auto !important;
+    min-height: 160px !important;
+    flex-shrink: 0 !important;
+    border-radius: 0 !important;
+    border-bottom: none !important;
+    overflow: hidden !important;
+    aspect-ratio: unset !important;
+    z-index: 1 !important;
   }
 
-  .ctaContainer .btn {
-    width: 100%; 
-    text-align: center;
+  .carImage {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    object-fit: cover !important;
+    object-position: center center !important;
   }
 
-  .carSpecs {
-    gap: 1rem !important;
+  /* Text content compact */
+  .textColumn {
+    padding: 1rem 1.2rem !important;
+    text-align: left !important;
+    align-items: flex-start !important;
+    flex: 1 !important;
+    min-width: 0 !important;
+  }
+
+  /* Reset reverse text alignment */
+  .showroomRowReverse .textColumn {
+    text-align: left !important;
+    align-items: flex-start !important;
+  }
+
+  .showroomRowReverse .carTitle::after {
+    left: 0 !important;
+    right: auto !important;
+  }
+
+  .showroomRowReverse .specItem {
+    flex-direction: row !important;
+  }
+
+  .carTitle {
+    font-size: 1.15rem !important;
+    margin-bottom: 0.8rem !important;
+    font-weight: 500 !important;
+  }
+
+  .carTitle::after {
+    bottom: -5px !important;
+    width: 30px !important;
   }
 
   .carDesc {
+    font-size: 0.8rem !important;
+    line-height: 1.4 !important;
+    margin-top: 0.6rem !important;
+    margin-bottom: 0.8rem !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  /* Specs as a tight inline row */
+  .carSpecs {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0.5rem 1rem !important;
+    margin-bottom: 0.8rem !important;
+  }
+
+  .specItem {
+    font-size: 0.75rem !important;
+    gap: 0.3rem !important;
+    letter-spacing: 0 !important;
+  }
+
+  .specIcon {
     font-size: 1rem !important;
   }
-}
 
-
-@media (max-width: 768px) {
-  /* Bulletproof Mobile Image Display */
-  .imageColumn {
-    display: block !important;
-    position: relative !important;
-    width: 100% !important;
-    min-height: 220px !important;
-    height: 220px !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-    overflow: hidden !important;
-    z-index: 10 !important;
+  /* CTA button compact */
+  .ctaContainer {
+    margin-top: 0 !important;
   }
-  .carImage {
-    display: block !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-  }
-}
 
-
-/* --- Polished Mobile Image Alignment --- */
-@media (max-width: 768px) {
-  .imageColumn {
-    min-height: unset !important;
-    height: auto !important;
-    aspect-ratio: 16 / 9;
-    width: 100% !important;
-    display: block !important;
-    position: relative !important;
-    overflow: hidden !important;
-    z-index: 10 !important;
-  }
-  .carImage {
-    object-position: center center !important;
+  .ctaContainer :global(.btn) {
+    padding: 0.5rem 1.2rem !important;
+    font-size: 0.75rem !important;
+    width: auto !important;
   }
 }
