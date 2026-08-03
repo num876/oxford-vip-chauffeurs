@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import styles from './ReadMore.module.css';
 
 export default function ReadMore({ 
@@ -14,6 +14,7 @@ export default function ReadMore({
 }) {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const contentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     // Check if we're on mobile on mount and window resize
@@ -31,8 +32,9 @@ export default function ReadMore({
   return (
     <div className={`${styles.wrapper} ${shouldClamp ? styles.isClamped : ''}`}>
       <div 
+        ref={contentRef}
         className={`${styles.content} ${shouldClamp ? styles.collapsed : ''}`}
-        style={{ maxHeight: shouldClamp ? `${maxHeight}px` : '5000px' }}
+        style={{ maxHeight: shouldClamp ? `${maxHeight}px` : (contentRef.current ? `${contentRef.current.scrollHeight}px` : '2000px') }}
       >
         {children}
       </div>
