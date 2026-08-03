@@ -61,6 +61,7 @@ export default function Header() {
           <Link href="/" className={linkStyle('/')}>Home</Link>
           <Link href="/services" className={linkStyle('/services')}>Services</Link>
           <Link href="/our-fleet" className={linkStyle('/our-fleet')}>Our Fleet</Link>
+          <Link href="/services/self-drive-hire" className={linkStyle('/services/self-drive-hire')}>Self Drive Hire</Link>
           <Link href="/about-us" className={linkStyle('/about-us')}>About</Link>
           <Link href="/contact" className={linkStyle('/contact')}>Contact</Link>
           <Link href="/booking" className="btn btn-primary" style={{ padding: '0.6rem 1.5rem', marginLeft: '1rem' }}>
@@ -84,6 +85,7 @@ export default function Header() {
           <Link href="/" className={linkStyle('/')} onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
           <Link href="/services" className={linkStyle('/services')} onClick={() => setIsMobileMenuOpen(false)}>Services</Link>
           <Link href="/our-fleet" className={linkStyle('/our-fleet')} onClick={() => setIsMobileMenuOpen(false)}>Our Fleet</Link>
+          <Link href="/services/self-drive-hire" className={linkStyle('/services/self-drive-hire')} onClick={() => setIsMobileMenuOpen(false)}>Self Drive Hire</Link>
           <Link href="/about-us" className={linkStyle('/about-us')} onClick={() => setIsMobileMenuOpen(false)}>About</Link>
           <Link href="/contact" className={linkStyle('/contact')} onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
           <Link href="/booking" className="btn btn-primary" onClick={() => setIsMobileMenuOpen(false)}>
