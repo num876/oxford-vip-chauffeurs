@@ -71,7 +71,7 @@ export default function Home() {
               </div>
               <div className={styles.carInfo}>
                 <h3 className={styles.carName}>Rolls Royce Ghost</h3>
-                <p className={styles.carDesc}>The pinnacle of luxury. Experience maximum comfort and an exquisitely refined, connected journey.</p>
+                <p className={styles.carDesc}>Spacious and luxurious, the Ghost is crafted to offer maximum comfort and style during your travels, allowing you to relax, unwind, and stay productive.</p>
                 <div className={styles.carSpecs}>
                   <div className={styles.specItem}><span className={styles.specIcon}>👥</span> 4 Pax</div>
                   <div className={styles.specItem}><span className={styles.specIcon}>💼</span> 3 Bags</div>
@@ -90,7 +90,7 @@ export default function Home() {
               </div>
               <div className={styles.carInfo}>
                 <h3 className={styles.carName}>Mercedes S-Class</h3>
-                <p className={styles.carDesc}>The gold standard of chauffeur-driven elegance. Unmatched refinement for business and pleasure.</p>
+                <p className={styles.carDesc}>Slightly larger and roomier, the S-Class is designed to provide additional comfort and style on your journey to ensure that you can relax, unwind and catch up on your work.</p>
                 <div className={styles.carSpecs}>
                   <div className={styles.specItem}><span className={styles.specIcon}>👤</span> 3 Pax</div>
                   <div className={styles.specItem}><span className={styles.specIcon}>🧳</span> 2 Bags</div>
@@ -107,7 +107,7 @@ export default function Home() {
               </div>
               <div className={styles.carInfo}>
                 <h3 className={styles.carName}>Mercedes V-Class</h3>
-                <p className={styles.carDesc}>Spacious luxury for group travel. Uncompromising comfort for up to 7 passengers.</p>
+                <p className={styles.carDesc}>As one of the special cars within our multi-person vehicle fleet, our Mercedes V-Class offers the upmost comfort and room for group travel.</p>
                 <div className={styles.carSpecs}>
                   <div className={styles.specItem}><span className={styles.specIcon}>👤</span> 7 Pax</div>
                   <div className={styles.specItem}><span className={styles.specIcon}>🧳</span> 7 Bags</div>
