@@ -559,18 +559,20 @@
   padding: 2.5rem;
   text-align: center;
   transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
-  background: linear-gradient(180deg, rgba(10,15,28,0.6) 0%, rgba(10,15,28,0.9) 100%);
-  border: 1px solid rgba(255,255,255,0.05);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(10, 12, 20, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-radius: var(--radius-lg);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
 }
 
 .fleetCard::before {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: radial-gradient(circle at 50% 0%, rgba(212,175,55,0.1) 0%, transparent 50%);
+  background: radial-gradient(circle at 50% 0%, rgba(212,175,55,0.15) 0%, transparent 60%);
   opacity: 0;
   transition: opacity 0.5s ease;
   pointer-events: none;
@@ -582,8 +584,8 @@
 
 .fleetCard:hover {
   transform: translateY(-8px);
-  border-color: rgba(212,175,55,0.3);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  border-color: rgba(212,175,55,0.4);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.7), 0 0 40px rgba(212,175,55,0.1);
 }
 
 /* Specs Row */
@@ -603,16 +605,24 @@
 .specItem {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 0.85rem;
-  color: var(--text-secondary);
+  gap: 0.8rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-primary);
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  border-left: 1px solid rgba(212, 175, 55, 0.3);
+  padding-left: 1rem;
+}
+
+.specItem:first-child {
+  border-left: none;
+  padding-left: 0;
 }
 
 .specIcon {
   color: var(--accent-gold);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 /* Interactive CTA */
@@ -626,6 +636,23 @@
 .fleetCardFeatured .fleetCTA {
   text-align: left;
   margin-top: 2rem;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: gap 0.3s ease, background 0.3s ease;
+}
+
+.ctaButton span {
+  transition: transform 0.3s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .ctaButton:hover {
+    gap: 1rem;
+  }
 }
 
 /* Optional: Subtle hover effect for the entire text block */

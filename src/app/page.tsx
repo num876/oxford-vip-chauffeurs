@@ -78,7 +78,7 @@ export default function Home() {
                   <div className={styles.specItem}><span className={styles.specIcon}>📶</span> Wi-Fi</div>
                 </div>
                 <div className={styles.fleetCTA}>
-                  <Link href="/booking?vehicle=rolls-royce-ghost" className="btn btn-primary">Book This Vehicle</Link>
+                  <Link href="/booking?vehicle=rolls-royce-ghost" className={`btn btn-primary ${styles.ctaButton}`}>Book This Vehicle <span>&rarr;</span></Link>
                 </div>
               </div>
             </div>
@@ -96,7 +96,7 @@ export default function Home() {
                   <div className={styles.specItem}><span className={styles.specIcon}>🧳</span> 2 Bags</div>
                 </div>
                 <div className={styles.fleetCTA}>
-                  <Link href="/booking?vehicle=s-class" className="btn btn-outline">Book This Vehicle</Link>
+                  <Link href="/booking?vehicle=s-class" className={`btn btn-outline ${styles.ctaButton}`}>Book This Vehicle <span>&rarr;</span></Link>
                 </div>
               </div>
             </div>
@@ -113,7 +113,7 @@ export default function Home() {
                   <div className={styles.specItem}><span className={styles.specIcon}>🧳</span> 7 Bags</div>
                 </div>
                 <div className={styles.fleetCTA}>
-                  <Link href="/booking?vehicle=v-class" className="btn btn-outline">Book This Vehicle</Link>
+                  <Link href="/booking?vehicle=v-class" className={`btn btn-outline ${styles.ctaButton}`}>Book This Vehicle <span>&rarr;</span></Link>
                 </div>
               </div>
             </div>
