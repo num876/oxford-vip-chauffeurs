@@ -290,6 +290,7 @@
   outline: none;
   border-color: var(--accent-gold);
   background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(212,175,55,0.15);
 }
 .textarea {
   min-height: 150px;
