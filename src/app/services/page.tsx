@@ -2,6 +2,7 @@ import styles from './services.module.css';
 import Link from 'next/link';
 import ReadMore from '@/components/ReadMore';
 import Image from 'next/image';
+import { PlaneIcon, BriefcaseIcon, GlassIcon, UsersIcon, CompassIcon, SteeringWheelIcon } from '@/components/ServiceIcons';
 
 export const metadata = {
   title: 'Our Services | 5 Star Oxford',
@@ -12,42 +13,42 @@ const services = [
     path: '/services/airport-transfers', 
     title: 'Airport Transfers', 
     desc: 'Whether you’re traveling abroad for an important business meeting or looking for a luxurious journey to the airport as part of a special holiday, 5 Star’s exclusive range of Airport Transfers from Oxfordshire will provide the perfect travel.', 
-    icon: '✈️',
+    icon: <PlaneIcon />,
     image: '/images/service-airport.jpg'
   },
   { 
     path: '/services/business-travel', 
     title: 'Business Travel', 
     desc: 'As one of Oxfordshire’s leading providers of chauffeur driven business travel, we excel in making sure that you and your colleagues get to important business meetings in the maximum of comfort and relaxation.', 
-    icon: '👔',
+    icon: <BriefcaseIcon />,
     image: '/images/service-business.jpg'
   },
   { 
     path: '/services/event-travel', 
     title: 'Event Travel', 
     desc: 'Finding your way to a special event can often come with unwanted and unnecessary stress. It’s important that you arrive calm, stress free, ready to enjoy your day ahead.', 
-    icon: '🥂',
+    icon: <GlassIcon />,
     image: '/images/service-event.jpg'
   },
   { 
     path: '/services/group-travel', 
     title: 'Group Travel', 
     desc: 'At Five Star we realise that complex itineraries and tight business travel schedules are often liable to last minute changes. Travel together in absolute comfort with our group travel services.', 
-    icon: '👥',
+    icon: <UsersIcon />,
     image: '/images/service-group.jpg'
   },
   { 
     path: '/services/tours', 
     title: 'Bespoke Tours', 
     desc: 'Whether you’re looking to have a quick local tour around Oxfordshire, want to explore a range of different cities, or even want to discover the Cotswolds with your own private chauffeur.', 
-    icon: '🏰',
+    icon: <CompassIcon />,
     image: '/images/service-tours-oxford.jpg'
   },
   { 
     path: '/services/self-drive-hire', 
     title: 'Self Drive Hire', 
     desc: 'We offer an exquisite fleet of the world\'s most prestigious supercars, ensuring an unforgettable driving experience for every occasion. Experience blistering speed and luxurious comfort.', 
-    icon: '🏎️',
+    icon: <SteeringWheelIcon />,
     image: '/images/self-drive-hero.jpg'
   },
 ];
