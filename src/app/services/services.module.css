@@ -311,3 +311,72 @@
 
 
 
+
+
+/* --- Subpage Cinematic Hero Layout --- */
+.subpageMain {
+  padding-top: 100px;
+  min-height: 80vh;
+  padding-bottom: 4rem;
+}
+
+.subpagePanel {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.subpageHero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.subpageHeroImage {
+  object-fit: cover;
+  z-index: 0;
+}
+
+.subpageHeroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10,12,20,0.95) 0%, transparent 100%);
+  z-index: 1;
+}
+
+.subpageContent {
+  padding: 3rem;
+  margin-top: -120px;
+  position: relative;
+  z-index: 2;
+}
+
+.subpageParagraph {
+  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.subpageCTA {
+  margin-top: 3rem;
+}
+
+.subpageBtn {
+  padding: 1rem 3rem;
+  display: inline-flex;
+  font-size: 1.1rem;
+}
+
+/* Subpage Mobile Adjustments */
+@media (max-width: 768px) {
+  .subpageHero {
+    height: 300px;
+  }
+  .subpageContent {
+    padding: 1.5rem;
+    margin-top: -80px;
+  }
+}
