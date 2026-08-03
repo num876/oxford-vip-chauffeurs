@@ -730,13 +730,59 @@
     gap: 2rem;
   }
 
-  /* Fleet card touch area padding */
+  /* Fleet cards mobile styling */
   .fleetCard {
+    padding: 1.5rem !important;
     margin-bottom: 1.5rem;
+    border-radius: var(--radius-md) !important;
   }
   
   .carInfo {
-    padding: 1.5rem;
+    padding: 0 !important;
+    margin-top: 1.5rem;
+  }
+
+  .carImageContainer {
+    display: block !important;
+    position: relative !important;
+    width: 100% !important;
+    min-height: unset !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9;
+    border-bottom: 2px solid var(--accent-gold) !important;
+    border-radius: var(--radius-sm) !important;
+    overflow: hidden !important;
+    z-index: 10 !important;
+  }
+  
+  .carImage {
+    display: block !important;
+    object-position: center center !important;
+  }
+
+  .fleetCardFeatured .carImageContainer {
+    aspect-ratio: 4 / 3; /* Slightly taller for the featured car on mobile */
+  }
+
+  .carSpecs {
+    grid-template-columns: 1fr 1fr !important;
+    display: grid !important;
+    gap: 1rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .specItem {
+    font-size: 0.75rem !important;
+  }
+
+  .fleetCTA, .fleetCardFeatured .fleetCTA {
+    text-align: center !important;
+    width: 100% !important;
+  }
+  
+  .fleetCTA :global(.btn) {
+    width: 100% !important;
+    justify-content: center !important;
   }
 
   /* Header adjustments for frosted glass mobile menu overlay */
@@ -757,7 +803,6 @@
     padding: 10px; /* 44px tap target approx */
   }
 }
-
 
 /* Fix Mobile Navbar Toggle visibility */
 .mobileMenuToggle {
@@ -793,31 +838,6 @@
   }
 }
 
-
-@media (max-width: 768px) {
-  /* Bulletproof Mobile Image Display */
-  .carImageContainer {
-    display: block !important;
-    position: relative !important;
-    width: 100% !important;
-    min-height: 220px !important;
-    height: 220px !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-    overflow: hidden !important;
-    z-index: 10 !important;
-  }
-  .carImage {
-    display: block !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-  }
-  .fleetCardFeatured .carImageContainer {
-    min-height: 250px !important;
-    height: 250px !important;
-  }
-}
-
 /* Logo Sizing Rules */
 .headerLogoImage {
   width: 280px !important;
@@ -828,23 +848,5 @@
   .headerLogoImage {
     width: 200px !important;
     height: 50px !important;
-  }
-}
-
-
-/* --- Polished Mobile Image Alignment --- */
-@media (max-width: 768px) {
-  .carImageContainer {
-    min-height: unset !important;
-    height: auto !important;
-    aspect-ratio: 16 / 9;
-    width: 100% !important;
-    display: block !important;
-    position: relative !important;
-    overflow: hidden !important;
-    z-index: 10 !important;
-  }
-  .carImage {
-    object-position: center center !important;
   }
 }
