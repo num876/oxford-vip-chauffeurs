@@ -1,6 +1,7 @@
 import styles from './about.module.css';
 import StarRating from '../../components/StarRating';
 import Image from 'next/image';
+import ReadMore from '@/components/ReadMore';
 
 export const metadata = {
   title: 'About Us | 5 Star Oxford',
@@ -49,6 +50,7 @@ export default function AboutPage() {
               <span className={styles.sectionSubtitle}>Our Heritage</span>
               <h2 className={styles.sectionTitle}>A Legacy of Excellence in Chauffeur Travel</h2>
               
+              <ReadMore mobileOnly={true} maxHeight={250}>
               <p className={styles.storyText}>
                 5 Star Oxford has cemented its reputation as Oxford’s finest luxury chauffeur company and takes pride in being the market leader in executive transport. Throughout the South East and Oxfordshire in particular, our name is synonymous with quality, comfort, reliability and punctuality.
               </p>
@@ -61,6 +63,7 @@ export default function AboutPage() {
               <p className={styles.storyText}>
                 Our aspiration is not to be the biggest, but certainly to be the best.
               </p>
+              </ReadMore>
             </div>
           </div>
         </div>

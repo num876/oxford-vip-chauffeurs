@@ -1,5 +1,6 @@
 import styles from './services.module.css';
 import Link from 'next/link';
+import ReadMore from '@/components/ReadMore';
 import Image from 'next/image';
 
 export const metadata = {

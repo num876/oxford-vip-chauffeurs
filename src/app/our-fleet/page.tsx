@@ -2,6 +2,7 @@ import styles from './fleet.module.css';
 import StarRating from '../../components/StarRating';
 import Image from 'next/image';
 import Link from 'next/link';
+import ReadMore from '@/components/ReadMore';
 
 export const metadata = {
   title: 'Our Fleet | 5 Star Oxford',
@@ -113,12 +114,14 @@ export default function FleetPage() {
           {/* Introductory Text Panel */}
           <div className="glass-panel" style={{ padding: '3rem', maxWidth: '900px', margin: '0 auto 5rem auto', textAlign: 'center' }}>
             <h2 style={{ color: 'var(--accent-gold)', fontWeight: 300, marginBottom: '1.5rem' }}>Hand-Selected For Perfection</h2>
+            <ReadMore mobileOnly={true} maxHeight={150}>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '1rem' }}>
               In order to provide each of our customers with the perfect and most luxurious service possible, we have sourced a fine selection of luxury vehicles that have been hand-selected to fulfil your every need. Discover more about our wide selection of vehicles and get more information on the range of journey types and services they can help to provide to you and your clients.
             </p>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8 }}>
               Whether you’re looking to travel alone, as part of a pair, or even in a group, our immaculate fleet will facilitate your every need, ensuring you can sit back, relax and enjoy the journey.
             </p>
+            </ReadMore>
           </div>
 
           {/* Alternating Vehicle Rows */}
@@ -139,13 +142,15 @@ export default function FleetPage() {
               
               <div className={styles.textColumn}>
                 <h3 className={styles.carTitle}>{vehicle.name}</h3>
-                                {Array.isArray(vehicle.desc) ? (
+                                <ReadMore mobileOnly={true} maxHeight={120}>
+                  {Array.isArray(vehicle.desc) ? (
                   vehicle.desc.map((paragraph, i) => (
                     <p key={i} className={styles.carDesc} style={{ marginBottom: '1rem' }}>{paragraph}</p>
                   ))
                 ) : (
                   <p className={styles.carDesc}>{vehicle.desc}</p>
                 )}
+                </ReadMore>
                 
                 <div className={styles.carSpecs}>
                   {vehicle.specs.map((spec, i) => (

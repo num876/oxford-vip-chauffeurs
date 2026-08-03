@@ -1,0 +1,52 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.content {
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0.4s ease-in-out;
+}
+
+.fadeOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: linear-gradient(to bottom, transparent, var(--bg-primary, rgba(10,15,28,1)) 90%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* 
+  If the ReadMore component is inside a glass-panel, we might need a different fade color,
+  but usually transparent to the container's background is sufficient, or we just rely on 
+  a semi-transparent gradient that matches the dark theme.
+*/
+.wrapper :global(.glass-panel) .fadeOverlay {
+  background: linear-gradient(to bottom, transparent, rgba(20,25,40,1) 90%);
+}
+
+.toggleButton {
+  display: inline-block;
+  background: transparent;
+  border: none;
+  color: var(--accent-gold, #D4AF37);
+  padding: 0.5rem 0;
+  font-family: inherit;
+  font-size: 1.05rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.toggleButton:hover {
+  color: #fff;
+}
