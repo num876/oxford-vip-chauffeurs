@@ -43,6 +43,13 @@ const services = [
     icon: '🏰',
     image: '/images/service-tours-oxford.jpg'
   },
+  { 
+    path: '/services/self-drive-hire', 
+    title: 'Self Drive Hire', 
+    desc: 'We offer an exquisite fleet of the world\'s most prestigious supercars, ensuring an unforgettable driving experience for every occasion. Experience blistering speed and luxurious comfort.', 
+    icon: '🏎️',
+    image: '/images/self-drive-hero.jpg'
+  },
 ];
 
 export default function ServicesPage() {
