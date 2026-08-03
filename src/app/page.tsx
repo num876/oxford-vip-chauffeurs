@@ -59,7 +59,7 @@ export default function Home() {
         <div className="container">
           <div className={styles.sectionHeader}>
             <span className={styles.sectionSubtitle}>Our Collection</span>
-            <h2 className={styles.sectionTitle}>The VIP Fleet</h2>
+            <h2 className={styles.sectionTitle}>Our Fleet</h2>
           </div>
           
           <div className={styles.fleetGridAsymmetric}>

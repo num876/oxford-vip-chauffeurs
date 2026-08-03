@@ -100,7 +100,7 @@ export default function FleetPage() {
         />
         <div className={styles.heroOverlay}></div>
         <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>The VIP Fleet</h1>
+          <h1 className={styles.heroTitle}>Our Fleet</h1>
           <p className={styles.heroSubtitle}>
             Luxurious & Dynamic Chauffeur Vehicles for Travel throughout Oxfordshire and Beyond
           </p>

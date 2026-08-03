@@ -525,7 +525,7 @@
   100% { transform: scale(1.15) translate(-1%, -1%); }
 }
 
-/* --- VIP Fleet Enhanced Asymmetric Layout --- */
+/* --- Fleet Enhanced Asymmetric Layout --- */
 
 .fleetGridAsymmetric {
   display: grid;

@@ -52,9 +52,10 @@ export default function ContactPage() {
                 <div className={styles.infoContent}>
                   <h3>Headquarters</h3>
                   <p>
-                    5 Star Oxford<br />
-                    54 Westbury Crescent<br />
-                    Oxford, OX4 3SA
+                    5 Star Oxford (UK) Ltd<br />
+                    Regus, John Eccles House<br />
+                    Robert Robinson Avenue<br />
+                    Oxford, OX4 4GP
                   </p>
                 </div>
               </div>
