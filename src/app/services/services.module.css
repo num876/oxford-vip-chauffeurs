@@ -195,8 +195,6 @@
 
 
 
-
-
 @media (max-width: 768px) {
   .heroTitle {
     font-size: 2.5rem;
@@ -207,72 +205,126 @@
 }
 
 
-/* ---- GIANT MOBILE OVERRIDES ---- */
+/* ---- MOBILE SERVICES OVERRIDES ---- */
 @media (max-width: 768px) {
-  /* Force all background attachments to scroll normally to prevent jank */
+  /* Hero compact */
   .hero {
     background-attachment: scroll !important;
-    min-height: 50vh !important;
-    padding: 6rem 1rem 3rem 1rem !important;
+    min-height: 40vh !important;
+    height: 40vh !important;
+    padding: 5rem 1rem 2rem 1rem !important;
   }
   
   .heroTitle {
-    font-size: clamp(2rem, 8vw, 3rem) !important;
+    font-size: clamp(1.8rem, 7vw, 2.5rem) !important;
+  }
+  
+  .heroSubtitle {
+    font-size: 0.95rem !important;
   }
 
-  /* Force all grids/flex to 1 column */
-  .servicesGrid, .grid, .contactGrid, .infoGrid, .formGrid, .aboutGrid {
+  /* Services section tighter padding */
+  .servicesSection {
+    padding: 2rem 1rem !important;
+  }
+
+  /* Force 1-column stacked cards */
+  .servicesGrid {
     grid-template-columns: 1fr !important;
     display: flex !important;
     flex-direction: column !important;
-    gap: 1.5rem !important;
-  }
-  
-  /* Reduce container/section paddings */
-  .section, .container {
-    padding: 3rem 1rem !important;
-  }
-  
-  .glass-panel, .infoCard {
-    padding: 1.5rem !important;
+    gap: 1.25rem !important;
   }
 
-  /* Ensure inputs and buttons span full width */
-  :global(input), :global(textarea), :global(select), :global(button), .btn {
-    width: 100% !important;
-    max-width: 100% !important;
+  /* Compact horizontal card layout */
+  .serviceCard {
+    display: flex !important;
+    flex-direction: row !important;
+    border-radius: var(--radius-md) !important;
+    min-height: unset !important;
+    height: auto !important;
+    overflow: hidden !important;
   }
-  
-  /* Shrink images slightly */
-  .imageWrapper, .serviceImage {
-    height: 200px !important;
-  }
-}
 
-
-@media (max-width: 768px) {
-  .cardContent {
-    padding: 1.5rem !important; /* Proper padding for text area only */
-  }
-  
-  .serviceTitle {
-    font-size: clamp(1.5rem, 5vw, 2rem) !important;
-  }
-  
+  /* Image as a left-side strip */
   .cardImageContainer {
     display: block !important;
     position: relative !important;
-    width: 100% !important;
-    min-height: 220px !important;
-    height: 220px !important;
+    width: 120px !important;
+    min-width: 120px !important;
+    max-width: 120px !important;
+    height: auto !important;
+    min-height: 140px !important;
     opacity: 1 !important;
     visibility: visible !important;
     overflow: hidden !important;
+    border-radius: 0 !important;
+    flex-shrink: 0 !important;
   }
-  
+
   .cardImage {
     display: block !important;
     opacity: 1 !important;
     visibility: visible !important;
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+
+  /* Gradient overlay for readability */
+  .cardImageOverlay {
+    background: linear-gradient(90deg, transparent 0%, rgba(10,15,28,0.6) 100%) !important;
+  }
+
+  /* Text content compact */
+  .cardContent {
+    padding: 1rem 1.2rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    flex: 1 !important;
+    min-width: 0 !important;
+  }
+
+  /* Hide the big icon on mobile to save space */
+  .serviceIcon {
+    display: none !important;
+  }
+
+  .serviceTitle {
+    font-size: 1.15rem !important;
+    margin-bottom: 0.4rem !important;
+    font-weight: 500 !important;
+  }
+
+  .serviceDesc {
+    font-size: 0.85rem !important;
+    line-height: 1.45 !important;
+    margin-bottom: 0.75rem !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  .serviceCTA {
+    font-size: 0.75rem !important;
+    margin-top: auto !important;
+  }
+
+  /* General mobile helpers */
+  .section, .container {
+    padding: 2rem 1rem !important;
+  }
+  
+  :global(.glass-panel), .infoCard {
+    padding: 1.5rem !important;
+  }
+
+  :global(input), :global(textarea), :global(select), :global(button), .btn {
+    width: 100% !important;
+    max-width: 100% !important;
   }
 }
+
+
+
