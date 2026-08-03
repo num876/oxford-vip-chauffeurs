@@ -2,7 +2,7 @@ import styles from './services.module.css';
 import Link from 'next/link';
 import ReadMore from '@/components/ReadMore';
 import Image from 'next/image';
-import { PlaneIcon, BriefcaseIcon, GlassIcon, UsersIcon, CompassIcon, SteeringWheelIcon } from '@/components/ServiceIcons';
+import { PlaneIcon, BriefcaseIcon, StarIcon, UsersIcon, CompassIcon, SteeringWheelIcon } from '@/components/ServiceIcons';
 
 export const metadata = {
   title: 'Our Services | 5 Star Oxford',
@@ -27,7 +27,7 @@ const services = [
     path: '/services/event-travel', 
     title: 'Event Travel', 
     desc: 'Finding your way to a special event can often come with unwanted and unnecessary stress. It’s important that you arrive calm, stress free, ready to enjoy your day ahead.', 
-    icon: <GlassIcon />,
+    icon: <StarIcon />,
     image: '/images/service-event.jpg'
   },
   { 
