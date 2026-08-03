@@ -45,10 +45,11 @@ export default function Header() {
             gap: '0.5rem'
           }}>
             <Image 
-              src="/images/logo.svg" 
+              src="/images/logo-hd.svg" 
               alt="5 Star Oxford Logo" 
-              width={260} 
-              height={65} 
+              width={280} 
+              height={70} 
+              className={styles.headerLogoImage}
               style={{ objectFit: 'contain' }}
               priority
             />

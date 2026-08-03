@@ -787,3 +787,16 @@
     height: 250px !important;
   }
 }
+
+/* Logo Sizing Rules */
+.headerLogoImage {
+  width: 280px !important;
+  height: 70px !important;
+}
+
+@media (max-width: 768px) {
+  .headerLogoImage {
+    width: 200px !important;
+    height: 50px !important;
+  }
+}
