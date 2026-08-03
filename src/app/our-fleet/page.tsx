@@ -161,8 +161,8 @@ export default function FleetPage() {
                 </div>
                 
                 <div className={styles.ctaContainer}>
-                  <Link href={`/booking?vehicle=${vehicle.id}`} className="btn btn-outline">
-                    Book This Vehicle
+                  <Link href={`/booking?vehicle=${vehicle.id}`} className={`btn btn-outline ${styles.ctaButton}`}>
+                    Book This Vehicle <span>&rarr;</span>
                   </Link>
                 </div>
               </div>

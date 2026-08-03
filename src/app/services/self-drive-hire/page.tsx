@@ -136,8 +136,8 @@ export default function Page() {
                   {car.desc}
                 </p>
                 <div className={styles.ctaContainer}>
-                  <Link href="/booking" className="btn btn-primary">
-                    Reserve Vehicle
+                  <Link href={`/booking?vehicle=${car.id}`} className={`btn btn-primary ${styles.ctaButton}`}>
+                    Reserve Vehicle <span>&rarr;</span>
                   </Link>
                 </div>
               </div>
