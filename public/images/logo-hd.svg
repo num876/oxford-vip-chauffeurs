@@ -30,10 +30,10 @@
 
   <!-- Text Section -->
   <g transform="translate(240, 110)">
-    <!-- Main Title -->
-    <text x="0" y="0" font-family="'Playfair Display', 'Times New Roman', serif" font-size="70" font-weight="700" fill="url(#goldGradient)" letter-spacing="2" filter="url(#dropShadow)">5 STAR OXFORD</text>
+    <!-- Main Title (Reduced font size from 70 to 58 to fit inside viewBox) -->
+    <text x="0" y="-5" font-family="'Playfair Display', 'Times New Roman', serif" font-size="58" font-weight="700" fill="url(#goldGradient)" letter-spacing="1" filter="url(#dropShadow)">5 STAR OXFORD</text>
     
     <!-- Subtitle -->
-    <text x="5" y="35" font-family="'Inter', 'Arial', sans-serif" font-size="18" font-weight="300" fill="#E2E8F0" letter-spacing="8" text-transform="uppercase">Executive Chauffeurs</text>
+    <text x="5" y="30" font-family="'Inter', 'Arial', sans-serif" font-size="16" font-weight="300" fill="#E2E8F0" letter-spacing="8" text-transform="uppercase">Executive Chauffeurs</text>
   </g>
 </svg>
