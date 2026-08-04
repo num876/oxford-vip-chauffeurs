@@ -92,7 +92,7 @@ export default function FleetPage() {
       {/* Hero Section */}
       <section className={styles.hero}>
         <Image 
-          src="/images/oxford-heritage-bg.jpg" 
+          src="/images/fleet-hero.jpg" 
           alt="The 5 Star Oxford Fleet" 
           fill 
           priority

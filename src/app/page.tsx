@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './page.module.css';
 import StarRating from '../components/StarRating';
+import HeroSlideshow from '../components/HeroSlideshow';
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className={styles.hero}>
-        <div className={`${styles.heroBackground} ${styles.kenBurns || 'kenBurns'}`}></div>
+        <HeroSlideshow />
         <div className={styles.heroOverlay}></div>
         <div className={styles.heroGlow}></div>
         

@@ -95,7 +95,7 @@ ul {
   text-transform: uppercase;
   font-size: 0.9rem;
   cursor: pointer;
-  transition: all 0.15s ease-out;
+  transition: all 0.05s ease-out;
   border: none;
   outline: none;
 }
